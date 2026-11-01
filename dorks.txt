@@ -1,0 +1,45 @@
+# Google Dorks — Referência de Consultas
+
+# Uso educacional: execute apenas pesquisas sobre domínios próprios,
+# laboratórios autorizados ou informações públicas que você tenha
+# autorização para analisar.
+
+# 1. Pesquisa por domínio
+site:example.com
+site:example.com "termo de interesse"
+-site:www.example.com site:example.com
+
+# 2. Tipos de arquivo públicos
+site:example.com filetype:pdf
+site:example.com filetype:docx
+site:example.com filetype:txt
+
+# 3. Títulos e conteúdo
+site:example.com intitle:"documentação"
+site:example.com intext:"política de privacidade"
+
+# 4. URLs e páginas públicas
+site:example.com inurl:blog
+site:example.com inurl:docs
+site:example.com inurl:contato
+
+# 5. Combinação de operadores
+site:example.com (filetype:pdf OR filetype:docx)
+site:example.com intitle:manual filetype:pdf
+
+# Operadores úteis
+# site:      limita a pesquisa a um domínio ou site
+# filetype:  filtra por extensão de arquivo
+# intitle:   procura termos no título da página
+# inurl:     procura termos no endereço da página
+# intext:    procura termos no conteúdo da página
+# OR         aceita um termo ou outro
+# -          exclui um termo da pesquisa
+# ""         procura uma expressão exata
+
+# Observações
+# - Substitua example.com por um domínio que você possui ou tem
+#   autorização para avaliar.
+# - Não procure credenciais, dados pessoais ou arquivos privados.
+# - Resultados do Google não comprovam vulnerabilidade; valide tudo
+#   somente em ambiente autorizado.
