@@ -1,50 +1,54 @@
-🔎 GOOGLE HACKING
+# Google Hacking
 
-"Google Dorks | Information Gathering | Ethical Hacking"
+**Google Dorks • OSINT passivo • Reconhecimento autorizado**
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Cybersecurity-Google%20Hacking-black?style=for-the-badge&logo=google" />
-  <img src="https://img.shields.io/badge/Focus-Footprinting-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-In%20Progress-blue?style=for-the-badge" />
-</p>---
+Repositório de estudo sobre operadores de pesquisa avançada para localizar e analisar informações que já estejam publicamente indexadas.
 
-🧠 About the Project
+## Objetivos
+- Aprender operadores de pesquisa avançada.
+- Entender conceitos de footprinting e OSINT.
+- Documentar possíveis exposições em ativos próprios.
+- Produzir registros úteis para auditorias autorizadas.
 
-Estudo prático de Google Hacking e Google Dorks, explorando operadores avançados de pesquisa utilizados no reconhecimento de informações públicas.
+## Operadores básicos
 
-🎯 Objectives
+| Operador | Finalidade |
+|---|---|
+| `site:dominio.com` | Limitar resultados a um domínio |
+| `filetype:pdf` | Filtrar por tipo de arquivo |
+| `intitle:termo` | Procurar termo no título |
+| `inurl:termo` | Procurar termo na URL |
+| `intext:termo` | Procurar termo no conteúdo |
+| `"frase exata"` | Buscar uma expressão exata |
 
-- Aprender técnicas de Google Dorking.
-- Compreender operadores avançados.
-- Aplicar conceitos de Footprinting.
-- Identificar possíveis exposições de informações públicas.
+## Exemplos seguros
 
-⚙️ Google Dorks
+Use apenas domínios próprios, ambientes de laboratório ou ativos com autorização explícita.
 
-Operator| Description
-"site:"| Search within a specific domain
-"filetype:"| Search for specific file types
-"intitle:"| Search in page titles
-"inurl:"| Search within URLs
-"intext:"| Search within page content
-
-💻 Practical Examples
-
+```text
 site:example.com
-filetype:pdf site:example.com
-intitle:"index of"
-inurl:login
+site:example.com filetype:pdf
+site:example.com intitle:documentacao
+site:example.com inurl:blog
+```
 
-🛡️ Disclaimer
+Os exemplos usam `example.com`, domínio reservado para documentação.
 
-Educational purposes only. All techniques must be used ethically and with proper authorization.
+## Fluxo de trabalho
+1. Defina o escopo e obtenha autorização.
+2. Realize buscas passivas.
+3. Registre consulta, data e URL pública.
+4. Valide o achado sem tentar contornar autenticação ou controles.
+5. Comunique possíveis exposições ao responsável.
+6. Recomende correções e acompanhe a resolução.
+
+## Estrutura sugerida
+- `dorks/`: consultas organizadas por categoria.
+- `notes/`: anotações e conceitos.
+- `reports/`: modelos de relatório sem dados sensíveis.
+
+## Aviso ético e legal
+Conteúdo exclusivamente educacional e defensivo. Não use dorks para localizar credenciais, dados pessoais, documentos privados ou informações confidenciais. Não tente acessar sistemas ou áreas restritas. Testes somente em ativos próprios ou com autorização explícita.
 
 ---
-
-<p align="center">
-  **DEATHCODE0x**
-  <br/>
-  Cybersecurity | Ethical Hacking | Pentest
-  <br/>
-  <i>Learn • Practice • Secure</i>
-</p>
+**DEATHCODE0x** · Cybersecurity · OSINT · Ethical Hacking
